@@ -94,10 +94,6 @@ body {
 /*Content*/
 
 	#content{
-
-		/*Position*/
-		padding: 5px 20px;
-
 		/*Organisation*/
 		display: flex;
 		justify-content: center;
@@ -109,10 +105,7 @@ body {
 		color: white;
 		box-shadow: 10px 7px 15px rgba(0, 0, 0, .75), -10px 7px 15px rgba(0,0,0, .75);
 	}
-
-	#content > * {
-		max-width: 1000px
-	}
+}
 
 	#content h1 {
 		font-size: 50px;
@@ -126,3 +119,23 @@ body {
 		font-size: 30px;
 		text-align: justify;
 	}
+
+/*Projets informatiques*/
+
+	#infocard{
+		height: 562px;
+		width: 100%;
+		margin-bottom: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#infocard > * {
+		max-width: 1000px;
+	}
+
+	#infocard a {
+		color: white;
+	}
+

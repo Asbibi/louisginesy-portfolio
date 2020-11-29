@@ -1,3 +1,7 @@
+html{
+	font-family: "Arial", Arial, sans-serif;
+}
+
 body {
 	margin :0;
 
@@ -54,7 +58,13 @@ body {
 		font-size: 25px;
 	}
 
-	#cell a:hover{
+	#cell + .other a:hover{
+		border-bottom-color: red;
+		border-bottom-width: 5px;
+		border-bottom-style: solid;
+	}
+
+	#cell + .selected {
 		border-bottom-color: red;
 		border-bottom-width: 5px;
 		border-bottom-style: solid;

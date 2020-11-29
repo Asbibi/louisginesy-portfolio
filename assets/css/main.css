@@ -28,11 +28,13 @@ body {
 		text-align: center;
 		display: flex;
 		align-items: center;
-		justify-content: space-around;
+		justify-content: space-between;
 		flex-wrap: nowrap;
 	}
 
-	
+	#nav p,h2 {
+		margin:0;
+	}	
 
 	#cell {
 		height: 80px;
@@ -69,19 +71,22 @@ body {
 		height: auto;
 		z-index: 2;
 
-
 	}
 
 /*Banner*/
 
 	#bruce{
-		height: 500px;
+		height: 550px;
 	}
 
 /*Content*/
 
 	#content{
 
+		/*Position*/
+		padding: 5px 20px;
+
 		/*Look*/
-		background-color: #30303b;
+		background-color: #1D1D1D;
+		color: white;
 	}

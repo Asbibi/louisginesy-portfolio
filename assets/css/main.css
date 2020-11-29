@@ -125,14 +125,10 @@ body {
 	#infocard{
 		height: 562px;
 		width: 100%;
-		margin-bottom: 20px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-	}
-
-	#infocard > * {
-		max-width: 1000px;
+		flex-direction: column;
 	}
 
 	#infocard a {
@@ -147,3 +143,30 @@ body {
 		color: grey
 	}
 
+	#infoproj {
+		width: 1100px;
+		padding: 50px 50px;
+		background-color: rgba(29,29,29,0.90);
+	}
+
+	#infocard :hover{
+		filter: alpha(opacity=10); 
+		opacity:0.1;
+	}
+
+	#infoprojdl{
+		height: 50px;
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	#infoprojdl a {
+		color: white;
+	}
+
+	#container {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		margin-bottom: 20px;
+	}

@@ -4,22 +4,10 @@ body {
 	/*Look*/
 	background: url(../images/ThorGiant.png) no-repeat center top;
 	background-size: 100%;
+	background-color: #252525;
 }
 
-/*Wrapper*/
-	#wrapper{
-		/*Position*/
-		margin-top: 10em;
-		margin-left: auto;
-		margin-right: auto;
-		max-width: 1300px;
-		height: auto;
-		z-index: 2;
 
-		/*Look*/
-		background-color: rgba(255, 255, 235,0.9);
-
-	}
 
 /* Nav */
 
@@ -36,7 +24,7 @@ body {
 		z-index: 3;
 		/*Look*/
 		color: white;
-		background-color: #23274a;
+		background-color: #1D1D25;
 		text-align: center;
 		display: flex;
 		align-items: center;
@@ -71,5 +59,29 @@ body {
 		border-bottom-style: solid;
 	}
 
+/*Wrapper*/
+	#wrapper{
+		/*Position*/
+		margin-top: 80px;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 1300px;
+		height: auto;
+		z-index: 2;
 
 
+	}
+
+/*Banner*/
+
+	#bruce{
+		height: 500px;
+	}
+
+/*Content*/
+
+	#content{
+
+		/*Look*/
+		background-color: #30303b;
+	}

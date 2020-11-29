@@ -139,3 +139,11 @@ body {
 		color: white;
 	}
 
+	#infocard p {
+		font-size: 25px;
+	}
+
+	#infocard h3 {
+		color: grey
+	}
+

@@ -88,10 +88,20 @@ body {
 		/*Position*/
 		padding: 5px 20px;
 
+		/*Organisation*/
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+
 		/*Look*/
 		background-color: #1D1D1D;
 		color: white;
 		box-shadow: 10px 7px 15px rgba(0, 0, 0, .75), -10px 7px 15px rgba(0,0,0, .75);
+	}
+
+	#content > * {
+		max-width: 1000px
 	}
 
 	#content h1 {

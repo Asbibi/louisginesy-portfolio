@@ -2,9 +2,8 @@ body {
 	margin :0;
 
 	/*Look*/
-	background: url(../images/ThorGiant.png) no-repeat center top;
-	background-size: 100%;
-	background-color: #252525;
+	
+	color: white;
 }
 
 
@@ -24,7 +23,7 @@ body {
 		z-index: 3;
 		/*Look*/
 		color: white;
-		background-color: #1D1D25;
+		background-color: #0F0F0F;
 		text-align: center;
 		display: flex;
 		align-items: center;
@@ -64,7 +63,7 @@ body {
 /*Wrapper*/
 	#wrapper{
 		/*Position*/
-		margin-top: 80px;
+		margin: 80px 0;
 		margin-left: auto;
 		margin-right: auto;
 		max-width: 1300px;

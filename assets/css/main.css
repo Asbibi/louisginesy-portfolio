@@ -93,3 +93,16 @@ body {
 		color: white;
 		box-shadow: 10px 7px 15px rgba(0, 0, 0, .75), -10px 7px 15px rgba(0,0,0, .75);
 	}
+
+	#content h1 {
+		font-size: 50px;
+	}
+
+	#content h2{
+		font-size: 40px;
+	}
+
+	#content p {
+		font-size: 30px;
+		text-align: justify;
+	}

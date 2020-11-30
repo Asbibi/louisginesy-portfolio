@@ -197,7 +197,7 @@ body {
 	#yt i,a {
 		color: red;
 	}
-	#yt a:hover, i:hover {
+	#yt a:hover,#yt i:hover {
 		color: #c42323;
 	}
 

@@ -194,11 +194,15 @@ body {
 
 /*Projets 3D*/
 
-	#yt i {
+	#yt i,a {
 		color: red;
 	}
-	#yt i:hover {
+	#yt a:hover, i:hover {
 		color: #c42323;
+	}
+
+	#yt a:visited {
+		color: red;
 	}
 	#yt p {
 		font-size: 25px !important; 

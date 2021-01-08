@@ -1,0 +1,41 @@
+Les images : dans assets\images
+le pdf n'importe ou
+
+Conseil si jsplus quoi fait quoi -> inspecteur puis passer la souris sur l'élément
+donne l'emplacement du truc et du css correspondant
+
+
+
+=== changer adresse mail / lien cv ===
+/!\ le faire à toutes les pages 
+
+<div nav> -> adresse en claire
+lien : balise <a>
+
+
+=== changer l'image de fond de la page ===
+<body> -> background -> url
+
+=== 3D ===
+
+real3d.html
+
+pas de container -> 3 trucs à copier
+<span> : titre + button
+	-> h2 titre
+	-> href : lien du boutton
+<iframe> : vidéo
+	-> src : lien
+<p> : paragraphe
+
+
+
+
+
+=== Projets info ===
+
+projetinfo.html
+
+le gros carré -> container ==> du <div container ...> au </div>
+
+image : largeur 1300x??

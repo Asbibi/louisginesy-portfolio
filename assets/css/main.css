@@ -128,7 +128,7 @@ body {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		flex-direction: column;
+		flex-direction: row;
 	}
 
 	#infocard a {
@@ -147,11 +147,23 @@ body {
 		width: 1100px;
 		padding: 50px 50px;
 		background-color: rgba(29,29,29,0.90);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: row;
 	}
 
-	#infocard:hover{
+	#infocard:hover #infotext{
 		filter: alpha(opacity=10); 
 		opacity:0.1;
+	}
+
+	#infocard:hover #infoproj {
+		background-color: rgba(29,29,29,0.10) !important;
+	}
+
+	#infotext {
+		margin-right: 25px;
 	}
 
 	#infoprojdl{
@@ -166,6 +178,11 @@ body {
 
 	#infoprojdl a {
 		color: white;
+	}
+
+	#infovid:hover > * {
+		filter: alpha(opacity=100)
+		opacity:1.0;
 	}
 
 	#container {

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="../assets/css/main.css" />
 	<link rel="icon" href="favicon.ico">
 	<title>LOUIS GINESY | Portfolio</title>
 	<meta charset="utf-8" />
@@ -9,8 +9,9 @@
 	<script src="https://kit.fontawesome.com/a696506d30.js" crossorigin="anonymous"></script>
 </head>
 
-<body style= " background: url(assets/images/ThorGiant.png) no-repeat center top;
+<body style= " background: url(../assets/images/ThorGiant.png) no-repeat center top;
 	background-size: 100%; background-color: #252525; background-attachment: fixed;">
+<script src="../assets/js/script.js"></script>
 
 	<div id="nav">
 		
@@ -21,10 +22,9 @@
 				<p>louis.ginesy@ip-paris.fr</p>
 			</div>
 
-			<!-- Pour modifier le CV ou le lkdn c'est les href ici -->
 			<div style="display: flex; justify-content: center; align-items: center; height: 80px; margin-left:25px; ">
 				<a href="https://www.linkedin.com/in/louis-ginesy-8b811b180" target="_blank" style="color: white;"><span class="fab fa-linkedin fa-2x"></span></a>
-				<a href="Louis-Ginesy-CV-Programmeur-Gameplay.pdf" style="margin-left: 15px;" download><img style="width: 40px;" src="assets/images/cv_icon.png"></a>
+				<a href="../assets/cvs/Louis-Ginesy-CV-EN.pdf" style="margin-left: 15px;" download><img style="width: 40px;" src="../assets/images/cv_icon.png"></a>
 			</div>
 
 		</div>
@@ -32,19 +32,21 @@
 		<div style="display: flex; justify-content: space-around; margin-right: 15px">
 			<div id="cell" class=""></div>
 			<div id="cell" class="other">
-				<a href="index.html">&Agrave propos</a>
+				<a href="home.html">About me</a>
 			</div>
 			<div id="cell" class="other">
-				<a href="projetinfos.html">Projets informatiques</a>
+				<a href="projetinfos.html">Code projects</a>
 			</div>
 			<div id="cell" class="other">
-				<a href="real3d.html">Réalisations 3D</a>
+				<a href="real3d.html">3D productions</a>
 			</div>
 			<div id="cell" class="other">
-				<a href="autreprojets.html">Autres projets</a>
-			</div>			
+				<a href="autreprojets.html">Other projects</a>
+			</div>
+			<div id="cell" class="" onmouseover="setFlag_FR()" onmouseout="setFlag_EN()">
+				<a href="../fr/vr_perspectives.html"><img id="flag-icon" style="width: 35px;" src="../assets/images/gb.svg"></a>
+			</div>
 		</div>
-
 	</div>
 
 	<div id="wrapper">
@@ -77,15 +79,15 @@
 					still sees the world from its eyes, like on the right image below (from Skyworld).
  
 					</p><br><center>
-                    <img src="assets/vrperspective/INTRO_SupHot.jpg" alt="1PP example" width="380">
-                    <img src="assets/vrperspective/INTRO_Skyworld.jpg" alt="God Perspective example" width="380">
+                    <img src="../assets/images/vrperspective/INTRO_SupHot.jpg" alt="1PP example" width="380">
+                    <img src="../assets/images/vrperspective/INTRO_Skyworld.jpg" alt="God Perspective example" width="380">
                     </center><br><p style="font-size: 20px">
 
                     Thus comes the question: Are non-first person perspectives suitable for VR games ?
                     
 					<br><br><br><br>
 
-                    Actually, some researchers have already tried to tackle this topic. Among all the literature found, the following papers particularly retain my attention :
+                    Actually, some researchers have already tried to tackle this topic. Among all the literature found, the following papers particularly retain my attention:
                 </p>
  
                     <ul style="font-size: 20px;">
@@ -116,8 +118,8 @@
                 <p style="font-size: 20px;">
                     The project is implemented using the <a href = "https://unity.com/fr" target = "_blank">Unity</a> game engine, and all the code is written in C#.
 					The basis of the VR interactions are handled by the OpenXR and XR Interaction Toolkit plugins.
-                    The application is built for and tested on an <a href = "https://www.oculus.com/quest-2/" target = "_blank">Oculus Quest 2</a>, which is a fully autonomous VR Headset. The Quest 2's operating system is Android,
-                    therefore the resulting built application is an .apk file.<br>
+                    The application is built for and tested on an <a href = "https://www.oculus.com/quest-2/" target = "_blank">Oculus Quest 2</a>, which is a fully autonomous VR Headset. 
+					The Quest 2's operating system is Android, therefore the resulting built application is an .apk file.<br>
                     The complete project is available on <a href = "https://github.com/Asbibi/VR_Perspectives" target = "_blank">Github</a>.
                 </p>
                 <h3 style="margin: 40px 0px">Camera Projection</h3>
@@ -126,8 +128,8 @@
                     But first, let's take a look at the camera setup in the standard 1PP situation:
  
                     </p><br><center>
-                    <img src="assets/vrperspective/SCHEMA_1PP_complete.png" alt="1PP Schema" width="400">
-                    <img src="assets/vrperspective/SCHEMA_1PP.png" alt="1PP render" width="400">
+                    <img src="../assets/images/vrperspective/SCHEMA_1PP_complete.png" alt="1PP Schema" width="400">
+                    <img src="../assets/images/vrperspective/SCHEMA_1PP.png" alt="1PP render" width="400">
                     </center><br><p style="font-size: 20px;">
  
                     In this scene (left image), the player is represented by the black wireframed cylinder. At his head's position, a camera (represented by a black pyramid)
@@ -140,18 +142,18 @@
                     <br><br>
                     Instead we decided to use the "Project on Plane" trick.<br>
                     This method works in 2 steps: first we create a new camera that fits the wanted perspective and that always has the corresponding behavior (see image below).
-                    At each frame this new camera will render the scene, including the player, and save that render into a render texture. The render texture is stored in memory but not directly displayed on the  VR device’s screen.
+                    At each frame this new camera will render the scene, including the player, and save that render into a render texture. The render texture is stored in memory but not directly displayed on the VR device’s screen.
                    
                     </p><br><center>
-                    <img src="assets/vrperspective/SCHEMA_3PP_cam1.png" alt="Alt-P Schema part 1" width="400">
+                    <img src="../assets/images/vrperspective/SCHEMA_3PP_cam1.png" alt="Alt-P Schema part 1" width="400">
                     </center><br><p style="font-size: 20px;">
  
                     The second step is to project that render texture on a plane placed in front of the View Camera. We call this plane the Projection Plane. Note that the View Camera still follows the player's head movement like in 1PP.
                     Then the View Camera only renders the Projection Plane (with the projected texture on it). And this second render is what the player eventually sees (right image below).
                    
                     </p><br><center>
-                    <img src="assets/vrperspective/SCHEMA_3PP_cam2.png" alt="Alt-P Schema part 2" width="400">
-                    <img src="assets/vrperspective/SCHEMA_3PP.png" alt="Alt-P Schema render" width="400">
+                    <img src="../assets/images/vrperspective/SCHEMA_3PP_cam2.png" alt="Alt-P Schema part 2" width="400">
+                    <img src="../assets/images/vrperspective/SCHEMA_3PP.png" alt="Alt-P Schema render" width="400">
                     </center><br><p style="font-size: 20px;">
  
                     The advantage of this second method is that it makes the creation of new perspectives and the swap between them really easy: to do so, one only needs to create
@@ -170,56 +172,56 @@
 					<br><br>
                     It's basically a sandbox scene where the player can experiment with different camera perspectives in a simple environment.
                     This one is composed of a ground and a few human size boxes. On the table at the center, there are 2 buttons that allow to go the other scenes, as well as
-                    two orange sticks that the player can grab with his hands. He can jump by pressing the A button on his controllers. A the player can also move/rotate his avatar with his
+                    two orange sticks that the player can grab with his hands. He can jump by pressing the A button on his controllers. The player can also move/rotate his avatar with his
                     joysticks or by physically moving in the real world. In case the user reaches the limit of his playground in the real world, he can press the B button to temporary block
-                    his avatar rotation. When the rotation is blocked, the screen turns gray.
+                    his avatar's rotation. When the rotation is blocked, the screen turns gray.
 					<br><br>
                     To explore the different camera perspectives that are available, the player can toggle the camera selection mode with the Y button. In this mode, a colored circle with a green arrow
-                    will be visible on the avatar’s left hand. He can then use his left joystick to change the active camera instead of moving the avatar.<br><br> The perspectives accessible here are:
+                    will be visible on the avatar’s left hand. He can then use his left joystick to change the active camera instead of moving the avatar.<br><br>The perspectives accessible here are:
                 </p>
                     <ul style="font-size: 20px;">
                         <li><strong>1PP:</strong> The default perspective, mainly here to serve as comparison reference for the other perspectives.
                                 <center>
-                                <img src="assets/vrperspective/SANDB_1PP.png" alt="1PP SandBox" height="250">
+                                <img src="../assets/images/vrperspective/SANDB_1PP.png" alt="1PP SandBox" height="250">
                                 </center>
                         </li>
                         <li><strong>3PP:</strong> A third person perspective where the camera is still linked to the head like in 1PP, but with an offset. Pressing the X button out of the perspective selection mode
                             will allow the user to adjust that offset using his left joystick.
                                 <center>
-                                <img src="assets/vrperspective/SANDB_3PP.png" alt="3PP SandBox" height="250">
+                                <img src="../assets/images/vrperspective/SANDB_3PP.png" alt="3PP SandBox" height="250">
                                 </center>
                         </li>
                         <li><strong>TopDown:</strong> In this perspective, the camera follows the avatar translations and rotations induced by the joystick inputs, but ignores the ones due to a real life movement.
                                 <center>
-                                <img src="assets/vrperspective/SANDB_TopDown.png" alt="TopDown SandBox" height="250">
+                                <img src="../assets/images/vrperspective/SANDB_TopDown.png" alt="TopDown SandBox" height="250">
                                 </center>
                         </li>
                         <li><strong>Side Perspective:</strong> Here the camera is placed as if the game was in 2D. The camera render is still done with an effect of perspective. The camera follows the lateral and vertical
                             translations of the player, but not his rotation nor his movement in the camera's normal direction.
                                 <center>
-                                <img src="assets/vrperspective/SANDB_2DPersp.png" alt="2D Perspective SandBox" height="250">
+                                <img src="../assets/images/vrperspective/SANDB_2DPersp.png" alt="2D Perspective SandBox" height="250">
                                 </center>
                         </li>
                         <li><strong>Side Orthographic:</strong> The same camera perspective as the previous one, but here with an Orthographic/Isometric render (i.e. without perspective).
                                 <center>
-                                <img src="assets/vrperspective/SANDB_2DOrtho.png" alt="2D Orthographic SandBox" height="250">
+                                <img src="../assets/images/vrperspective/SANDB_2DOrtho.png" alt="2D Orthographic SandBox" height="250">
                                 </center>
                         </li>
                         <li><strong>Angled Side Orthographic:</strong> Another variant of the previous camera, but here the camera is a bit lifted up and looks down to the player. The render is Orthographic here too.
                                 <center>
-                                <img src="assets/vrperspective/SANDB_2DAngledOrtho.png" alt="2D Top Orthographic SandBox" height="250">
+                                <img src="../assets/images/vrperspective/SANDB_2DAngledOrtho.png" alt="2D Top Orthographic SandBox" height="250">
                                 </center>
                         </li>
                         <li><strong>Real Camera:</strong> This camera is parented to a physical object (the big orange camera on the right) that the player can push or grab.
                                 <center>
-                                <img src="assets/vrperspective/SANDB_Real.png" alt="Real SandBox (pov)" height="250">
-                                <img src="assets/vrperspective/SANDB_RealExte.png" alt="Real SandBox (exterior)" height="250">
+                                <img src="../assets/images/vrperspective/SANDB_Real.png" alt="Real SandBox (pov)" height="250">
+                                <img src="../assets/images/vrperspective/SANDB_RealExte.png" alt="Real SandBox (exterior)" height="250">
                                 </center>
                         </li>
                         <li><strong>Real Camera with Free Rotation:</strong> The same perspective as the previous one, but in addition this camera will replicate the head rotations performed while the camera is used. This allows to
                             look around more easily and makes the camera more pleasant to use.
                                 <center>
-                                <img src="assets/vrperspective/SANDB_RealRotation.png" alt="Real rotable SandBox" height="250">
+                                <img src="../assets/images/vrperspective/SANDB_RealRotation.png" alt="Real rotable SandBox" height="250">
                                 </center>
                         </li>
                     </ul>
@@ -233,11 +235,11 @@
                     <a href = "https://www.beatsaber.com/" target = "_blank">Beat Saber</a>.
                     <br><br>
                     Beat Saber is a game where the user has two sabers of different colors, and has to slice colored cubes that come at him in rhythm with a music.
-                    To score has much points as possible, the users has to slice all the cubes with the right saber (i.e. the one that has the cube's color) and in the direction
+                    To score has much points as possible, the user has to slice all the cubes with the right saber (i.e. the one that has the cube's color) and in the direction
                     indicated by the arrow on the cube. In the standard game mode, the cubes appear in front of the user. But a 90° and a 360° modes exist where the cubes can also come from the sides (cf example on the image below).
-					We decided to get inspiration from this mode in particular. Indeed the literature I've read states that the 3PP provides a better space awareness than 1PP. Having to slice cubes coming from any direction thus seemed to us to be a great way to take advantage of that additional awareness.
+					We decided to get inspiration from those modes in particular. Indeed the literature I've read states that the 3PP provides a better space awareness than 1PP. Having to slice cubes coming from any direction thus seemed to us to be a great way to take advantage of that additional awareness.
                     </p><br><center>
-                    <img src="assets/vrperspective/BS_Original.jpg" alt="Original Beat Saber game" width="550">
+                    <img src="../assets/images/vrperspective/BS_Original.jpg" alt="Original Beat Saber game" width="550">
                     </center><br><p style="font-size: 20px;">
  
                     The elaboration of that use case has been completed in two phases. Firstly, I tried to replicate the original Beat Saber's gameplay with few alterations. This includes the block slicing with 2 different colors,
@@ -247,7 +249,7 @@
                     Instead, the cubes appear periodically after a fixed delay at a randomly choose position.
  
                     </p><br><center>
-                    <img src="assets/vrperspective/BS_First.png" alt="First version of Beat Saber like game" width="550">
+                    <img src="../assets/images/vrperspective/BS_First.png" alt="First version of Beat Saber like game" width="550">
                     </center><br><p style="font-size: 20px;">
  
                     After a short test session on this implementation with other researchers, few modifications have been decided to make it more suitable for 3PP.<br>
@@ -255,7 +257,7 @@
                     a dither filter as it still provides the sensation of a physical presence from the avatar while making it possible to see through it. The other modifications concerned the cubes. To be easier to hit in
                     3PP they have been sized up, and the slice direction isn't taken into account anymore. Actually now the saber only need to touch a cube to slice it.<br><br>
                     Beside those modifications, few additions had been made as well.<br>
-                    I added the possibility to change the cut saber tolerance : 
+                    I added the possibility to change the cut saber tolerance: 
 					</p>
                     <ul style="font-size: 20px;">
                         <li>One color per saber and both sabers able to slice all the cubes</li>
@@ -264,11 +266,11 @@
                     </ul>
 					<p style="font-size: 20px;">
 					I also added the possibility to choose between 3 different paces for the cube spawning. Finally, I added to possibility to make the
-                    cube pop with a random or fixed vertical inclinaison, which is a new feature compared to the original Beat Saber game.
+                    cubes pop with a random or fixed vertical inclinaison, which is a new feature compared to the original Beat Saber game.
                     </p><br><center>
-                    <img src="assets/vrperspective/BS_Second.png" alt="Second version of Beat Saber like game 1" width="270">
-                    <img src="assets/vrperspective/BS_Second2.png" alt="Second version of Beat Saber like game 2" width="270">
-                    <img src="assets/vrperspective/BS_Second3.png" alt="Second version of Beat Saber like game 3" width="270">
+                    <img src="../assets/images/vrperspective/BS_Second.png" alt="Second version of Beat Saber like game 1" width="270">
+                    <img src="../assets/images/vrperspective/BS_Second2.png" alt="Second version of Beat Saber like game 2" width="270">
+                    <img src="../assets/images/vrperspective/BS_Second3.png" alt="Second version of Beat Saber like game 3" width="270">
                     </center><br><br>
                
                 <h3 style="margin: 40px 0px">Use Case n°2: Escape Game in Isometric Top Down perspective</h3>
@@ -277,11 +279,12 @@
                     As we didn't have any precise idea we went through a brainstorming session. The session made us go for an isometric top-down camera used for an exploration/puzzle
                     game similar in the concept to <a href = "https://www.nintendo.fr/Jeux/Nintendo-Switch/Captain-Toad-Treasure-Tracker-1348071.html" target = "_blank">Captain Toad</a>.
                     In order to make the VR aspect of the game still relevant, we decided to integrate several physical interactions like button pressing, slider pushing, or box transport
-                    like in the game <a href = "https://store.steampowered.com/app/477160/Human_Fall_Flat/" target = "_blank">Human Fall Flat</a>. Eventually, we wanted the user to only move his avatar through real life movement, excluding the use of his joysticks. So as the user would need to physically navigate in his room, I
-                    intentionally designed the level to be a vertical tower to limit the needed space.
+                    like in the game <a href = "https://store.steampowered.com/app/477160/Human_Fall_Flat/" target = "_blank">Human Fall Flat</a>. 
+					Eventually, we wanted the user to only move his avatar through real life movement, excluding the use of his joysticks. 
+					So as the user would need to physically navigate in his room, I intentionally designed the level to be a vertical tower to limit the needed space.
  
                     </p><br><center>
-                    <img src="assets/vrperspective/HHF_Overview.png" alt="Escape Game overview" width="300">
+                    <img src="../assets/images/vrperspective/HHF_Overview.png" alt="Escape Game overview" width="300">
                     </center><br><p style="font-size: 20px;">
  
                     For the camera perspective chosen here, the player can swap between two points of view that are diagonally opposed by pressing the X button of his controllers. That allows
@@ -289,8 +292,8 @@
                     allows new possibilities like hiding hints or the path to take.
  
                     </p><br><center>
-                    <img src="assets/vrperspective/HHF_SideFront.png" alt="Escape Game Front" width="450">
-                    <img src="assets/vrperspective/HHF_SideBack.png" alt="Escape Game Back" width="450">
+                    <img src="../assets/images/vrperspective/HHF_SideFront.png" alt="Escape Game Front" width="450">
+                    <img src="../assets/images/vrperspective/HHF_SideBack.png" alt="Escape Game Back" width="450">
                     </center><br><br>
                 <br>
 				<p style="font-size: 20px;">  
@@ -298,7 +301,7 @@
 				</p>
 
 
-                <h2 style="margin: 40px 0px">First Impressions of a naive user</h2>
+                <h2 style="margin: 40px 0px">First impressions of a naive user</h2>
                 <p style="font-size: 20px;">    
                     After finishing the implementation of the project, I made one of my friends test them.<br>
                     He already had some quick VR experiences (less than 1 hours in total) and in particular has already played the original Beat Saber game. However he was completely naive of the alternative camera perspectives proposed by our project. Thus his first impressions about those are valuable information.
@@ -318,7 +321,7 @@
                 </p>
                 <dl style="font-size: 20px;">
                     <dt>- Fix the IK issues and more generally polish the project:</dt>
-                        <dd>As the idea was to build proof of concept games to test alternative camera perspectives, the polishing tasks have been put aside. However, as the first impressions show, a dysfunctional visual feature like the IK can alone break the immersion and distort the results.
+                        <dd>As the idea was to build proof of concept games to test alternative camera perspectives, the polishing tasks have been put aside. However, as the first impressions showed, a dysfunctional visual feature like the IK can alone break the immersion and distort the results.
                         </dd><br>                      
                     <dt>- Add a third concrete use case (Optional):</dt>
                         <dd>This one isn't a mandatory step. However during the brainstorming session an interesting idea of a VR game has been suggested. It consists of a Whac-A-Mole like game with the 3PP camera, where the moles would pop on the faces of a cube instead of the top of a table. As this is quite similar to the Beat Saber like game we’ve made, we decided to rather implement the Escape Game scene instead of the Whac-A-Mole, but having this could be an interesting game to test.
@@ -326,7 +329,7 @@
                     <dt>- Create a Test version of the project:</dt>
                         <dd>In the current state of the project, the user can freely change the current scene, his perspective, and even some game settings in the case of the Beat Saber like scene. To run real tests, we would need to create a dedicated version where the user has less flexibility and has to follow a specific, already determined test scenario. Plus, it would be the occasion to log interesting data onto a file while the test is running.
                         </dd><br>
-                    <dt>Run proper test sessions :</dt>
+                    <dt>- Run proper test sessions:</dt>
                         <dd>Once the Test version is complete, it would be time to use it with several test users in a controlled environment. After the play session those users would then have to answer prepared questionnaires, and we could analyze those answers and the logged infos to get definitive usable results.
                         </dd><br>
                 </dl>
@@ -334,10 +337,10 @@
                 
 				<h2 style="margin: 40px 0px">Conclusion</h2>              
                 <p style="font-size: 20px;">    
-                    Those results are globally positive : they tend to show that with an adapted game design that takes advantage of both the alternative perspective and the VR dimension
+                    Those results are globally positive: they tend to show that with an adapted game design that takes advantage of both the alternative perspective and the VR dimension
                     of the application, new VR camera perspectives can be a real plus as well as a renewal in the VR game industry.<br>
                     However keep in mind that I didn't use any specific formulation for my questions so it's likely to be biased at some point.
-                    To have some more reliable results, we would need to run proper test sessions, which leads us to the final section of this webpage.
+                    To have some more reliable results, we would need to run proper test sessions, like detailled in the previous section.
 					<br>
 					<br>
 					<br>
@@ -345,7 +348,7 @@
 					<a style="margin-right: 20px; margin-bottom: 20px;" href="https://youtu.be/E-g7gSfL0lc" target="_blank">Demonstration Video:</a>
                 </p>
 				<center>
-				<iframe width="960" height="540" src="https://youtu.be/E-g7gSfL0lc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe width="960" height="540" src="https://www.youtube.com/embed/E-g7gSfL0lc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</center>
 				<br>
 				<br>

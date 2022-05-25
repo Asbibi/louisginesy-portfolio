@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="../assets/css/main.css" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
 	<link rel="icon" href="favicon.ico">
 	<title>LOUIS GINESY | Portfolio</title>
@@ -11,8 +11,9 @@
 	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 </head>
 
-<body style= " background: url(assets/images/ThorGiant.png) no-repeat center top;
+<body style= " background: url(../assets/images/ThorGiant.png) no-repeat center top;
 	background-size: 100%; background-color: #252525; background-attachment: fixed;">
+	<script src="../assets/js/script.js"></script>
 
 	<div id="nav">
 		
@@ -25,7 +26,7 @@
 
 			<div style="display: flex; justify-content: center; align-items: center; height: 80px; margin-left:25px; ">
 				<a href="https://www.linkedin.com/in/louis-ginesy-8b811b180" target="_blank" style="color: white;"><span class="fab fa-linkedin fa-2x"></span></a>
-				<a href="Louis-Ginesy-CV-Programmeur-Gameplay.pdf" style="margin-left: 15px;" download><img style="width: 40px;" src="assets/images/cv_icon.png"></a>
+				<a href="../assets/cvs/Louis-Ginesy-CV-FR.pdf" style="margin-left: 15px;" download><img style="width: 40px;" src="../assets/images/cv_icon.png"></a>
 			</div>
 
 		</div>
@@ -33,7 +34,7 @@
 		<div style="display: flex; justify-content: space-around; margin-right: 15px">
 			<div id="cell" class=""></div>
 			<div id="cell" class="other">
-				<a href="index.html">&Agrave propos</a>
+				<a href="home.html">&Agrave propos</a>
 			</div>
 			<div id="cell" class="other">
 				<a href="projetinfos.html">Projets informatiques</a>
@@ -43,7 +44,10 @@
 			</div>
 			<div id="cell" class="selected">
 				<a href="autreprojets.html">Autres projets</a>
-			</div>			
+			</div>
+			<div id="cell" class="" onmouseover="setFlag_EN()" onmouseout="setFlag_FR()">
+				<a href="../en/autreprojets.html"><img id="flag-icon" style="width: 35px;" src="../assets/images/fr.svg"></a>
+			</div>
 		</div>
 
 	</div>
@@ -57,7 +61,7 @@
 		<div id="content">
 			<span style="max-width: 1000px; margin-bottom: 40px">
 
-				<span style="display: flex;justify-content: space-between; align-items: center;"><h2 style="margin: 40px 0px">Mes Affiches associatives</h2></span>
+				<span style="display: flex;justify-content: space-between; align-items: center;"><h2 style="margin: 40px 0px">Mes Affiches Associatives</h2></span>
 
 				<p style="font-size: 20px">Pendant les trois années que j'ai passé à Télécom Sudparis, j'ai fait parti de plusieurs clubs dans lesquels j'occupais souvent un poste lié à la communication du club. Ainsi, j'ai eu l'occasion de réaliser plusieurs affiches pour ces différents clubs grâce au logiciel Gimp.</p>
 
@@ -67,70 +71,70 @@
 					<div class="splide__track">
 						<ul class="splide__list">
 							<li class="splide__slide">
-								<img src="assets/images/BDA-Festivart_Lundi.jpg">
+								<img src="../assets/images/posters/BDA-Festivart_Lundi.jpg">
 								<h4>BDA - Festiv'Art</h4>
 								<div style="margin-bottom: 20px">
 									Le Festiv'Art est un événement organisé par le Bureau des Arts (BDA) qui consiste en plusieurs activités et ateliers répartis sur une semaine. Ceci est l'affiche que j'ai fait pour présenter les activités du premier soir.
 								</div>
 							</li>
 							<li class="splide__slide">
-								<img src="assets/images/BDA-Presentation.png">
+								<img src="../assets/images/posters/BDA-Presentation.png">
 								<h4>BDA - Présentation</h4>
 								<div style="margin-bottom: 20px">
 									Il est important pour le Bureau des Arts (BDA) d'intéresser et d'intégrer un maximum de nouveaux élèves dès le début de l'année. C'est pour cela qu'une présentation des différents pôles du BDA est proposée, présentation qui a été annoncée par cette affiche.
 								</div>
 							</li>
 							<li class="splide__slide">
-								<img src="assets/images/Gamint-LAN_League_of_Legends.png">
+								<img src="../assets/images/posters/Gamint-LAN_League_of_Legends.png">
 								<h4>Gamint - Clash des Listes</h4>
 								<div style="margin-bottom: 20px">
-									Chaque année nous organisons une LAN sur le jeu "League of Legends" qui est notre LAN la plus populaire. A cette occasion, nous organisons un tournoi sur ce jeu réservé au listes candidates à l'élection du Bureau Des Elèves (BDE), affrontement annoncé par cette affiche.
+									A Gamint, nous organisons chaque année une LAN sur le jeu "League of Legends" qui est notre LAN la plus populaire. A cette occasion, nous organisons un tournoi sur ce jeu réservé au listes candidates à l'élection du Bureau Des Elèves (BDE), affrontement annoncé par cette affiche.
 								</div>
 							</li>
 							<li class="splide__slide">
-								<img src="assets/images/Gamint-LAN_Minecraft.jpg">
-								<h4>Gamint - L'Enderlan'</h4>
+								<img src="../assets/images/posters/Gamint-LAN_Minecraft.jpg">
+								<h4>Gamint - L'Enderlan</h4>
 								<div style="margin-bottom: 20px">
 									Première édition d'une LAN réalisée sur Minecraft. Nous avions pour cette LAN préparé un serveur privé dédié. J'ai réalisé cette affiche jusqu'au fond fait sur Blender, ainsi que le trophée offert aux gagnant qui était un Enderman (monstre iconique de Minecraft) tenant une pioche imprimé en 3D.
 								</div>
 							</li>
 							<li class="splide__slide">
-								<img src="assets/images/Gamint-LAN_Party_Games.png">
+								<img src="../assets/images/posters/Gamint-LAN_Party_Games.png">
 								<h4>Gamint - LAN Party Games</h4>
 								<div style="margin-bottom: 20px">
 									Ma première affiche en tant que nouveau responsable communication à Gamint. Cette LAN était portée sur un ensemble de jeux multijoueurs rapides à prendre en main pour annoncer et célébrer la passation du club et le début de notre mandat.
 								</div>
 							</li>
 							<li class="splide__slide">
-								<img src="assets/images/Gamint-LAN_Super_Smash_Bros_Ultimate.png">
-								<h4>Heading 01</h4>
+								<img src="../assets/images/posters/Gamint-LAN_Super_Smash_Bros_Ultimate.png">
+								<h4>Gamint - LAN Smash</h4>
 								<div style="margin-bottom: 20px">
-									L'afiche de notre première LAN en tant que 2eme année, je l'ai réalisé avec un élève d epremière année.
+									L'affiche de notre première LAN en tant que 2eme année, je l'ai réalisé avec un élève de première année.
 								</div>
 							</li>
 							<li class="splide__slide">
-								<img src="assets/images/Gamint-LAN_World_Of_Warcraft _ Trackmania.png">
-								<h4>Heading 01</h4>
+								<img src="../assets/images/posters/Gamint-LAN_World_Of_Warcraft _ Trackmania.png">
+								<h4>Gamint - Ma première affiche de LAN</h4>
 								<div style="margin-bottom: 20px">
 									Ma toute première affiche associative. Elle s'inspire d'une autre affiche réalisée par le précédent bureau de Gamint.
 								</div>
 							</li>
 							<li class="splide__slide">
-								<img src="assets/images/Gate_Fresqu_It-Brainstorming.png">
+								<img src="../assets/images/posters/Gate_Fresqu_It-Brainstorming.png">
 								<h4>Projet GATE - Brainstorming Fresqu'It</h4>
 								<div style="margin-bottom: 20px">
 									J'ai réalisé cette affiche pour annoncer la session de brainstorming que nous avons fait pour notre projet GATE Fresqu'It. En effet, notre projet consistant à peindre une fresque avec des jeunes d'Evry, ce brainstorming visait à choisir le thème de la fresque.
 								</div>
 							</li>
 							<li class="splide__slide">
-								<img src="assets/images/Le_RIG-Formation_Blender1.png">
+								<img src="../assets/images/posters/Le_RIG-Formation_Blender1.png">
 								<h4>Le RIG - Formation 1 et 2 sur 6</h4>
 								<div style="margin-bottom: 20px">
 									Lorsque j'ai fondé le club de 3D de mon école, Le RIG, j'ai proposé une formation sur le logiciel Blender afin d'apprendre les bases de la modélisation et de l'animation 3D aux personnes intéressées. Cette affiche annonçait les 2 premières séances qui portaient sur la partie modélisation de la formation.
 								</div>
 							</li>
 							<li class="splide__slide">
-								<img src="assets/images/Le_RIG-Formation_Blender3.png">
+								<img src="../assets/images/posters/Le_RIG-Formation_Blender3.png">
 								<h4>Le RIG - Formation 5 et 6 sur 6</h4>
 								<div style="margin-bottom: 20px">
 									Et voici l'affiche pour les deux dernières séances de la formation portant elles sur les shader, l'éclairage et le compositing. Il y avait également une affiche animée pour les séances 3 et 4 qui portaient sur le rigging et l'animation.
@@ -139,7 +143,7 @@
 						</ul>
 					</div>
 				</div>
-
+				<br>
 
 				<!-- Pour rajouter du contenu, copier de delà -->
 				
@@ -147,7 +151,12 @@
 
 				<iframe width="1000" height="562" src="https://www.youtube.com/embed/B0ok_BnDYWo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-				<p style="font-size: 25px;">Le projet Gate est un projet de groupe de première année à Télécom Sudparis qui n'a pas forcément d'aspect technique. Pour ma part, j'ai choisi de participer au projet Fresqu'It. Nous étions 7 et avions pour objectif de réaliser une fresque dans un tunnel d'Evry en collaboration avec des jeunes des maisons de quartier de la ville. J'y occupais le rôle de co-responsable de la communication avec un autre étudiant, et ceci est la vidéo de présentation que nous avons réalisé à la fin du projet.</p>
+				<p style="font-size: 20px;">
+					Le projet GATE est un projet de groupe de première année à Télécom Sudparis qui n'a pas forcément d'aspect technique. 
+					Pour ma part, j'ai choisi de participer au projet Fresqu'It.<br>
+					Nous étions 7 et avions pour objectif de réaliser une fresque dans un tunnel d'Evry en collaboration avec des jeunes des maisons de quartier de la ville.<br>
+					J'y occupais le rôle de co-responsable de la communication avec un autre étudiant, et ceci est la vidéo de présentation que nous avons réalisé à la fin du projet.
+				</p>
 
 				<!-- A delà -->
 

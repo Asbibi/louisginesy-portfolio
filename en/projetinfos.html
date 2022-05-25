@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<link rel="icon" href="favicon.ico">
+	<title>LOUIS GINESY | Portfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<script src="https://kit.fontawesome.com/a696506d30.js" crossorigin="anonymous"></script>
+</head>
+
+<body style= " background: url(../assets/images/ThorGiant.png) no-repeat center top;
+	background-size: 100%; background-color: #252525; background-attachment: fixed;">
+	<script src="../assets/js/script.js"></script>
+
+	<div id="nav">
+		
+		<div style="display: flex; justify-content: center; margin-left: 25px">
+
+			<div style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start;">
+				<h2>Louis GINESY</h2>
+				<p>louis.ginesy@ip-paris.fr</p>
+			</div>
+
+			<!-- Pour modifier le CV ou le lkdn c'est les href ici -->
+			<div style="display: flex; justify-content: center; align-items: center; height: 80px; margin-left:25px; ">
+				<a href="https://www.linkedin.com/in/louis-ginesy-8b811b180" target="_blank" style="color: white;"><span class="fab fa-linkedin fa-2x"></span></a>
+				<a href="../assets/cvs/Louis-Ginesy-CV-EN.pdf" style="margin-left: 15px;" download><img style="width: 40px;" src="../assets/images/cv_icon.png"></a>
+			</div>
+
+		</div>
+
+		<div style="display: flex; justify-content: space-around; margin-right: 15px">
+			<div id="cell" class=""></div>
+			<div id="cell" class="other">
+				<a href="home.html">About me</a>
+			</div>
+			<div id="cell" class="selected">
+				<a href="projetinfos.html">Code projects</a>
+			</div>
+			<div id="cell" class="other">
+				<a href="real3d.html">3D productions</a>
+			</div>
+			<div id="cell" class="other">
+				<a href="autreprojets.html">Other projects</a>
+			</div>
+			<div id="cell" class="" onmouseover="setFlag_FR()" onmouseout="setFlag_EN()">
+				<a href="../fr/projetinfos.html"><img id="flag-icon" style="width: 35px;" src="../assets/images/gb.svg"></a>
+			</div>
+		</div>
+
+	</div>
+
+
+
+
+
+
+	<div id="wrapper">
+
+		<div id="bruce" style="height: 400px;">
+			<h1 style="font-size: 50px; margin-bottom: 100px">Code projects</h1>
+		</div>
+
+
+
+<!-- Projets Pro -->
+		<div id="content" style="background-color: transparent; margin-bottom: 100px;">
+
+	<!-- Section Title-->
+			<div id="content" style="height: 120px; width: 100%; margin-bottom: 20px;"> 
+				<span style="display: flex; justify-content: space-between; width: 100%; align-items: center">
+					<h2 style="font-size: 40px; margin-left: 60px">Professional Projects</h2>
+				</span>
+			</div>
+
+	<!-- Ubisoft M+R SoH -->
+			<div id="container" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../assets/images/projbg/Ubisoft-Sparks-Hope.png); background-size: 100%; background-repeat:no-repeat center top; width: 100%">
+			
+				<div id="infocard">
+
+					<div id="infoproj">
+
+						<div id="infotext">
+
+							<h2>Tool Programmer on Mario+Rabbids: Sparks of Hope</h2>
+							<h3>2022 | C++ - Snowdrop - Engineer Internship IGD</h3>
+
+							<p style="font-size: 20px">
+								Mario+Rabbids: Sparks of Hope is a game mixing exploration and adventure with a strategic combat system, scheduled for 2022. It's the sequel of the game Mario+Rabbids: Kingdom Battle released in 2017. It's developped by Ubisoft in collaboration with Nintendo.
+							<br>
+								During this second engineer internship, I joined the engine team as a tool programmer. My role was mainly to implement new features on the software interface of the engine.
+								Those usually respond to a request from the other teams of the project in order to help them build the game, but I never directly edited the game myself.
+								<br><br>
+								This internship finalizes my M2 year of the Interaction Graphic & Design (IGD) master.
+							</p>
+
+						</div>
+						
+						<span id="infovid">
+							<iframe width="300" height="281" src="https://www.youtube.com/embed/y9t2zyncDU4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</span>
+						
+
+					</div>
+
+
+				</div>
+
+				<div id="infoprojdl">
+					<a style="margin-right: 20px; margin-bottom: 20px;" href="https://youtu.be/y9t2zyncDU4" target="_blank"><i class="fab fa-youtube fa-3x"></i></a>
+					<a style="margin-right: 20px; margin-bottom: 20px;" href="https://www.ubisoft.com/fr-fr/game/mario-rabbids/sparks-of-hope" target="_blank"><img style="width: 50px;" src="../assets/images/switch_icon.png"></a>
+				</div>
+
+			</div>
+
+	<!-- Eko Software -->
+			<div id="container" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../assets/images/projbg/Rugby22.jpg); background-size: 100%; background-repeat:no-repeat center top; margin-bottom:0; width: 100%">
+			
+				<div id="infocard">
+
+					<div id="infoproj">
+
+						<div id="infotext">
+
+							<h2>Gameplay Programmer on Rugby22</h2>
+
+							<h3>2021 | C++ - Cintia - Engineer Internship TSP</h3>
+
+							<p>
+								Rugby22 is a Rugby Union game developped by Eko Software and edited by Nacon, released late january 2022. Its an interation of the game Rugby20.
+								<br>
+								During this 6 month internship I had the role of a gameplay programmer. Thus, I mainly implemented modifications on the UI, the gameplay during and the gameplay outside matches.
+								<br><br>
+								This internship was made to complete my final year at Télécom Sudparis (TSP).								
+							</p>
+
+						</div>
+						
+						<span id="infovid">
+							<iframe width="300" height="281" src="https://www.youtube.com/embed/CxcutaKVDVw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</span>
+						
+
+					</div>
+
+
+				</div>
+
+				<div id="infoprojdl">
+					<a style="margin-right: 20px; margin-bottom: 20px;" href="https://www.youtube.com/watch?v=CxcutaKVDVw" target="_blank"><i class="fab fa-youtube fa-3x"></i></a>
+					<a style="margin-right: 20px; margin-bottom: 20px;" href="https://store.steampowered.com/app/1475850/Rugby_22/" target="_blank"><i class="fab fa-steam fa-3x"></i></a>
+
+				</div>
+
+			</div>
+		</div>
+		 
+
+
+<!-- Projets IGD -->
+
+		<!--<div id="bruce" style="height: 200px;">
+			<span style="display: flex; justify-content: space-between; width: 100%; align-items: center">
+				<h2 style="font-size: 40px">Projets personnels</h2>
+				<a href="https://drive.google.com/drive/folders/1XqGfSB9ovWXalp_1VcXt3qQyov-Z9GB1?usp=sharing" target="_blank"><button style="cursor: pointer;" id="dl">ACC&EacuteDER AUX BUILDS <i class="far fa-file-archive"></i></button></a>
+			</span>
+		</div>-->
+ 
+
+		<div id="content" style="background-color: transparent; margin-bottom: 100px;">
+
+	<!-- Section Title -->
+			<div id="content" style="height: 120px; width: 100%; margin-bottom: 20px;"> 
+				<span style="display: flex; justify-content: space-between; width: 100%; align-items: center">
+					<h2 style="font-size: 40px; margin-left: 60px">"Interaction, Graphic & Design" Master Projects</h2>
+				</span>
+			</div>
+
+	<!-- VR Perspectives -->
+			<div id="container" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../assets/images/projbg/VR-perspectives.png); background-size: 100%; background-repeat:no-repeat center top; width: 100%;">	<!-- Enlever margin-bottom:0; pour avoir la séparation en bas avec le prochain projet pro -->
+
+				<div id="infocard">
+
+					<div id="infoproj">
+
+						<div id="infotext">
+
+							<h2>Research Guided Project - VR Perspectives</h2>
+
+							<h3>2021-2022 | Unity - Virtual Reality - Oculus Quest 2</h3>
+
+							<p>Project aiming at developping a virtual reality (VR) application that allows to explore and take benefits from other camera perspectives than the first person one, 
+								especially the third person one, the side view or even an isometric perspective...<br>
+								This project has been led similarly to how a researcher would have done, and the detailled project report is available by clicking on the '?' icon below.
+							</p>
+
+						</div>
+						
+						<span id="infovid">
+							<iframe width="300" height="281" src="https://www.youtube.com/embed/E-g7gSfL0lc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</span>
+						
+
+					</div>
+
+
+				</div>
+
+				<div id="infoprojdl">
+					<a style="margin-right: 20px; margin-bottom: 20px;" href="vr_perspectives.html" target="_blank"><i class="fa fa-question-circle fa-3x"></i></a>
+					<a style="margin-right: 20px; margin-bottom: 20px;" href="https://youtu.be/E-g7gSfL0lc" target="_blank"><i class="fab fa-youtube fa-3x"></i></a>
+					<a style="margin-right: 20px; margin-bottom: 20px;" href="https://github.com/Asbibi/VR_Perspectives.git" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+
+				</div>
+
+			</div>
+
+	<!-- Nodal World -->
+			<div id="container" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../assets/images/projbg/NodalWorld.png); background-size: 100%; background-repeat:no-repeat center top; width: 100%">
+
+				<div id="infocard">
+
+					<div id="infoproj">
+
+						<div id="infotext">
+
+							<h2>Nodal World</h2>
+
+							<h3>Autumn 2021 | Java - Java Swing</h3>
+
+							<p>Nodal world is a software/game in which the user can simulate a world of which he defines the rules.
+								To do so he has a nodal editor at his disposal. He can thus define the rules fo the terrain generation.
+								Then he can populate his world with entities, the living incarnations of the different species, of whom he controls the life through birth, movement and death rules.
+								The user also have tools to help him manage the variables of his world, debug his node networks, save or load another world.
+								<br>
+								More details are available in the readme file of the Git repository.
+							</p>
+
+						</div>
+						
+						<span id="infovid">
+							<iframe width="300" height="281" src="https://www.youtube.com/embed/TSMcbBt-5Fs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</span>
+						
+
+					</div>
+
+
+				</div>
+
+				<div id="infoprojdl">
+					<a style="margin-right: 20px; margin-bottom: 20px;" href="https://youtu.be/TSMcbBt-5Fs" target="_blank"><i class="fab fa-youtube fa-3x"></i></a>
+					<a style="margin-right: 20px; margin-bottom: 20px;" href="https://github.com/Asbibi/NodalWorld.git" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+
+				</div>
+
+			</div>
+			
+	<!-- AR -->
+			<div id="container" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../assets/images/projbg/AR.png); background-size: 100%; background-repeat:no-repeat center top; width: 100%">
+
+				<div id="infocard">
+
+					<div id="infoproj">
+
+						<div id="infotext">
+
+							<h2>Demon Doors</h2>
+
+							<h3>Winter 2021 | Unity - C# - Augmented Reality (AR) - Vuforia</h3>
+
+							<p>This short project consists into creating an augmented reality application for the Mixed Reality and Tangible Interactions (MRTI) course.
+								The core was free to choose but had to incorporate interactions between virtual and reel elements.
+								Our group decided to create an automatic fighting game where all the strategic aspect stands on the heroes placement.<br>
+								The game is developped on Unity using the Vuforia library to handle the AR part, and meant to be played on an Android smartphone.
+							</p>
+
+						</div>
+						
+						<span id="infovid">
+							<iframe width="300" height="281" src="https://www.youtube.com/embed/5lBKCU1uB8A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</span>
+						
+
+					</div>
+
+
+				</div>
+
+				<div id="infoprojdl">
+					<a style="margin-right: 20px; margin-bottom: 20px;" href="https://youtu.be/5lBKCU1uB8A" target="_blank"><i class="fab fa-youtube fa-3x"></i></a>
+					<a style="margin-right: 20px; margin-bottom: 20px;" href="https://github.com/Asbibi/AR_AssaultTower.git" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+
+				</div>
+
+			</div>
+
+	<!-- ARAP -->
+			<div id="container" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../assets/images/projbg/Arap.png); background-size: 100%; background-repeat:no-repeat center top; width: 100%">
+
+				<div id="infocard">
+
+					<div id="infoproj">
+
+						<div id="infotext">
+
+							<h2>"ARAP" Mesh Deformation</h2>
+
+							<h3>Autumn 2021 | C++ - Libigl</h3>
+
+							<p>The goal of this project was to implement the algorithm proposed in the scientific paper As-Rigid-As-Possible Surface Modeling", accessible through clicking on the '?' icon below.
+								This paper proposes a way to deform a 3D object mesh in order to get the most natural result possible, which is the most locally rigid one.
+								To do so, the deformation has to locally minimize the deformation energy.<br>
+								The project has been coded in C++ using the Libigl library for handling and displaying the 3D world.
+							</p>
+
+						</div>
+						
+						<span id="infovid">
+							<iframe width="300" height="281" src="https://www.youtube.com/embed/JhWZFA2sVcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</span>
+					</div>
+				</div>
+
+				<div id="infoprojdl">
+					<a style="margin-right: 20px; margin-bottom: 20px;" href="https://igl.ethz.ch/projects/ARAP/" target="_blank"><i class="fa fa-question-circle fa-3x"></i></a>
+					<a style="margin-right: 20px; margin-bottom: 20px;" href="https://youtu.be/JhWZFA2sVcQ" target="_blank"><i class="fab fa-youtube fa-3x"></i></a>
+					<a style="margin-right: 20px; margin-bottom: 20px;" href="https://github.com/lbertrand417/ARAP.git" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+				</div>
+			</div>
+
+	<!-- Collaborative Map -->
+			<div id="container" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../assets/images/projbg/Collaborative-map.png); background-size: 100%; background-repeat:no-repeat center top; width: 100%">
+
+				<div id="infocard">
+
+					<div id="infoproj">
+
+						<div id="infotext">
+
+							<h2>Collaborative Map</h2>
+
+							<h3>Winter 2021 | HTML - Javascript - CSS - Node.js - Leaflet</h3>
+
+							<p>Here we aimed at building a collaborative tool for our Groupware and Collaborative Work course.
+								We decided to create a collaborative map on which the users can place et edit markers visible from everyone, snap their viewpoint to others' one, or even ask the rest of the group to look at a specific location on the map.<br>
+								The application has been coded in HTML/Javascript using Node.js to manage the server, as well as the Leaflet library to handle the local copy of the map and its display.
+							</p>
+
+						</div>
+						
+						<span id="infovid">
+							<iframe width="300" height="281" src="https://www.youtube.com/embed/nVOSjbaDTow" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</span>
+					</div>
+				</div>
+
+				<div id="infoprojdl">
+					<a style="margin-right: 20px; margin-bottom: 20px;" href="https://youtu.be/nVOSjbaDTow" target="_blank"><i class="fab fa-youtube fa-3x"></i></a>
+					<a style="margin-right: 20px; margin-bottom: 20px;" href="https://github.com/winsa24/Collaborative-Map.git" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+				</div>
+			</div>
+
+	<!-- Animation Retarget -->
+			<div id="container" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../assets/images/projbg/Anima-retarget.png); background-size: 100%; background-repeat:no-repeat center top; width: 100%; margin-bottom: 0px;">
+
+				<div id="infocard">
+
+					<div id="infoproj">
+
+						<div id="infotext">
+
+							<h2>Animation Retargeter</h2>
+
+							<h3>Spring 2022 | Python - Blender</h3>
+
+							<p>The only rule for this project was to build an program that outcomes a 3D animation.
+								Thus to save time on my personnal project Anima, for which I'll need a lot of animations, I decided to build an add-on for the 3D software Blender that allows me to roughly replicate an animation from an armature to another.<br>
+								My Process is based on the labelling of key bones by the user, and on the elaboration of links between the key bones of each armature.
+							</p>
+
+						</div>
+						
+						<span id="infovid">
+							<iframe width="300" height="281" src="https://www.youtube.com/embed/ZowrO7UXjgY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</span>
+					</div>
+				</div>
+
+				<div id="infoprojdl">
+					<a style="margin-right: 20px; margin-bottom: 20px;" href="https://youtu.be/ZowrO7UXjgY" target="_blank"><i class="fab fa-youtube fa-3x"></i></a>
+					<a style="margin-right: 20px; margin-bottom: 20px;" href="https://github.com/Asbibi/Anima_AnimRetargetter.git" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+				</div>
+			</div>
+
+	<!-- Creative IA -->
+	<!-- Raytracing -->
+		</div>
+
+
+
+<!-- Projets TSP -->
+		<div id="content" style="background-color: transparent; margin-bottom: 100px;">
+
+	<!-- Section Title -->
+			<div id="content" style="height: 120px; width: 100%; margin-bottom: 20px;"> 
+				<span style="display: flex; justify-content: space-between; width: 100%; align-items: center">
+					<h2 style="font-size: 40px; margin-left: 60px">Scholar Projects from Télécom Sudparis</h2>
+					<a href="https://drive.google.com/drive/folders/1XqGfSB9ovWXalp_1VcXt3qQyov-Z9GB1?usp=sharing" target="_blank"><button style="cursor: pointer;" id="dl">BUILDS <i class="far fa-file-archive"></i></button></a>
+				</span>
+			</div>
+
+	<!-- Myth Busters -->
+			<div id="container" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../assets/images/projbg/PFE-myth-busters.png); background-size: 100%; background-repeat:no-repeat center top; width: 100%">
+
+				<div id="infocard">
+
+					<div id="infoproj">
+
+						<div id="infotext">
+
+							<h2>JIN Final Year Project - Myth Busters</h2>
+
+							<h3>2020-2021 | Unreal - C++ - GGPO</h3>
+
+							<p>It's a 1 versus 1 fighting game staging gods from diverse mythologies in a circular arena without any gravity.
+								The players are free to move vertically and horizontally. Their goal is to stack health damage on their opponent in order to be able to eject him from the arena.
+								A crucial point of the project is its online multiplayer aspect that we wanted to implement trough the middleware GGPO.
+							</p>
+
+						</div>
+						
+						<span id="infovid">
+							<iframe width="300" height="281" src="https://www.youtube.com/embed/TQIQZ4KXIys" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</span>
+					</div>
+				</div>
+
+				<div id="infoprojdl">
+					<a style="margin-right: 20px; margin-bottom: 20px;" href="https://youtu.be/TQIQZ4KXIys" target="_blank"><i class="fab fa-youtube fa-3x"></i></a>
+					<a style="margin-right: 20px; margin-bottom: 20px;" href="https://github.com/Jed974/Myth-Busters" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+				</div>
+
+			</div>
+
+	<!-- IHM -->
+			<div id="container" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../assets/images/projbg/IHM-platformer.png); background-size: 100%; background-repeat:no-repeat center top; width: 100%">
+
+				<div id="infocard">
+
+					<div id="infoproj">
+						<div id="infotext">
+							
+							<h2>2D Platformer</h2>
+
+							<h3>Autumn/Winter 2020 | Unity - C# - Arduino</h3>
+
+							<p style="font-size: 20px">
+								Project realized in the first place for the Interactions Hommes Machines (IHM) course, consisting into creating a 2D platformer on Unity. 
+								We had to build the collision and movement systems ourselves (the use of Unity's physical engine was forbidden), and make the player properties editable by an external game designer.
+								<br><br>
+								An alternative version, developped for the Internet des Objets Connectés (IOT) course, allows to communicate with an Arduino card integrated to an electronic circuit.
+								This adds new feedbacks and controls to the game.
+								This circuit involves among other things some diodes and captors such as a press button and a capacitive sensor.
+								This variant is available on the branch IOT_Louis of the Git repository.
+							</p>
+						</div>
+
+						<span id="infovid">
+							<iframe width="300" height="281" src="https://www.youtube.com/embed/PxTFhmX2ufw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</span>
+
+					</div>
+
+				</div>
+
+				<div id="infoprojdl">
+
+					<a style="margin-right: 20px; margin-bottom: 20px;" href="https://www.youtube.com/watch?v=PxTFhmX2ufw" target="_blank"><i class="fab fa-youtube fa-3x"></i></a>
+
+					<a style="margin-right: 20px; margin-bottom: 20px;" href="https://github.com/Asbibi/IHM-Platformer" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+
+				</div>
+
+			</div>
+
+	<!-- Warbot -->
+			<div id="container" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../assets/images/projbg/Warbot.png); background-size: 100%; background-repeat:no-repeat center top; width: 100%">
+
+				<div id="infocard">
+
+					<div id="infoproj">
+						<div id="infotext">
+							
+							<h2>IA Project - Warbot</h2>
+
+							<h3>Winter 2020 | NetLogo</h3>
+
+							<p>The principle of the project was to make two virtual robot armies fight each other autonomously.
+								Those armies are composed of different kinds of robots (the headquarters, the explorers, the harvesters and the rocket-launchers) that all have their own properties (detailled in the file Rules_v3.0.2.pdf).
+								The project core is to write for each of those robot type a behaviour to follow.
+
+								<br>Each pair of student had to define and implement its own robot routines before confronting the other students' armies in a tournament.
+								Our strategy is the one implemented in the file red.nls of the Git repository.
+							</p>
+						</div>
+
+						<span id="infovid">
+							<iframe width="300" height="281" src="https://www.youtube.com/embed/tLdtVhyrROE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</span>
+
+					</div>
+
+				</div>
+
+				<div id="infoprojdl">
+					<a style="margin-right: 20px; margin-bottom: 20px;" href="https://youtu.be/tLdtVhyrROE" target="_blank"><i class="fab fa-youtube fa-3x"></i></a>
+					<a style="margin-right: 20px; margin-bottom: 20px;" href="https://github.com/Asbibi/WarbotVPOP.git" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+				</div>
+
+			</div>
+
+	<!-- Unijam -->
+			<div id="container" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../assets/images/projbg/Unijam.png); background-size: 100%; background-repeat:no-repeat center top; width: 100%">
+
+				<div id="infocard">
+					<div id="infoproj">
+
+						<div id="infotext">
+
+							<h2>Unijam - Very Bad Knight</h2>
+
+							<h3>November 2020 | Unity - Game Jam</h3>
+
+							<p>Game built during the Unijam 2020, a game jam of 48h organised by Télécom Sudparis in november 2020 with the them "A great power involves great responsibility".
+								<br>
+								It's a quick arcade 2D game in which the player incarnates a knight that has a mission to accomplish at the village's East end.
+								But his real goal is to take your master's position. 
+								To do so, he will tarnish his master's reputation by doing various bad action on the trip. 
+								But he has to be careful to not be caught !
+								<br><br>
+								The game is playable on our Itch.io page (see the '?' icon below).
+							</p>
+						</div>
+
+						<span id="infovid">
+							<iframe width="300" height="281" src="https://www.youtube.com/embed/4kAI8vIcucU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</span>
+						
+
+					</div>
+				</div>
+
+				<div id="infoprojdl">					
+					<a style="margin-right: 20px; margin-bottom: 20px;" href="https://paul-verified.itch.io/verybadknight" target="_blank"><i class="fa fa-question-circle fa-3x"></i></a>
+					<a style="margin-right: 20px; margin-bottom: 20px;" href="https://www.youtube.com/embed/4kAI8vIcucU" target="_blank"><i class="fab fa-youtube fa-3x"></i></a>
+					<a style="margin-right: 20px; margin-bottom: 20px;" href="https://github.com/Asbibi/UNIJAM-PITCH19" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+				</div>
+			</div>
+
+	<!-- Meduse -->
+			<div id="container" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../assets/images/projbg/Meduse.png); background-size: 100%; background-repeat:no-repeat center top; width: 100%">
+
+				<div id="infocard">
+
+					<div id="infoproj">
+
+						<div id="infotext">
+							
+							<h2>Miniproject C++ - Médusé</h2>
+
+							<h3>June 2020 | C++ - CMake - SFML - PugiXML - Box2D - Tiled</h3>
+
+							<p style="font-size: 20px">
+								Project realized in 2 weeks for the C++ Development course.
+								The theme was simply the greek mythology, and we had to use the SFML library as well as two other we were free to choose.<br>
+								We decided to do a 2D platforming game where the player incarnates Percy on his road to kill Medusa. 
+								Because of that, if the player looks to the right he instantly dies and retries from the previous room.
+								However to help him in quest, he also has a shield he can use has a mirror that makes him invulnerable to Medusa but invert his movements.
+								The player can also hide himself in the walls' shadow to not cross Medusa's gaze.
+							</p>
+						</div>
+
+						<span id="infovid">
+							<iframe width="300" height="281" src="https://www.youtube.com/embed/yxBr8QsfDMc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</span>
+					</div>
+				</div>
+
+				<div id="infoprojdl">
+					<a style="margin-right: 20px; margin-bottom: 20px;" href="https://www.youtube.com/watch?v=yxBr8QsfDMc" target="_blank"><i class="fab fa-youtube fa-3x"></i></a>
+					<a style="margin-right: 20px; margin-bottom: 20px;" href="https://github.com/Zobeko/Mini-projet-Cpp" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+				</div>
+			</div>
+
+	<!-- Jintech -->
+			<div id="container" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../assets/images/projbg/Jintech.png); background-size: 100%; background-repeat:no-repeat center top; margin-bottom: 0px; width: 100%">
+
+				<div id="infocard">
+
+					<div id="infoproj">
+
+						<div id="infotext">
+							<h2>Cassiopée - Jintech</h2>
+
+							<h3>2019-2020 | Unity - C# - TCP</h3>
+
+							<p>
+								Robot simulator designed for the robotic club of Télécom Sudparis, Intech, in order to help the club to adjust his candidate robot for a national robotic tournament (Coupe de France de Robotique).
+								The software has been developped on Unity with 2 other students and had to replicate the robot's behavior in its movements, actuators (mecanic arms, suction cup) or sensors.
+								<br>
+								The simulator can be controlled by a user throught keyboard inputs, but also trough external code using a TCP connection.
+							</p>
+
+						</div>
+						<span id="infovid">
+							<iframe width="300" height="281" src="https://www.youtube.com/embed/-z65d8ztTrU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</span>
+					</div>
+				</div>
+
+				<div id="infoprojdl">
+					<a style="margin-right: 20px; margin-bottom: 20px;" href="https://www.youtube.com/watch?v=-z65d8ztTrU" target="_blank"><i class="fab fa-youtube fa-3x"></i></a>
+					<a style="margin-right: 20px" href="https://drive.google.com/drive/folders/1wfB6xAOvQWIG2dMKNkYkQuDfpHZlIiMm?usp=sharing" target="_blank"><i class="fab fa-google-drive fa-3x"></i></a>
+				</div>
+			</div>
+
+	<!-- Dev Mobile -->
+		</div>
+
+
+
+<!-- Projets Perso -->
+		<div id="content" style="background-color: transparent; margin-bottom: 100px;">
+
+	<!-- Section Title -->
+			<div id="content" style="height: 120px; width: 100%; margin-bottom: 20px;"> 
+				<span style="display: flex; justify-content: space-between; width: 100%; align-items: center">
+					<h2 style="font-size: 40px; margin-left: 60px">Personnal Projects</h2>					
+				</span>
+			</div>
+
+	<!-- Anima -->
+			<div id="container" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../assets/images/projbg/Anima.png); background-size: 100%; background-repeat:no-repeat center top; width: 100%">
+
+				<div id="infocard">
+
+					<div id="infoproj">
+
+						<div id="infotext">
+
+							<h2>Anima</h2>
+
+							<h3>2021-??? | Unreal - C++ - Blender</h3>
+
+							<p>Anima is a personnal project I started in february 2021, after a first attemp on Unity suring the 2020 summer.
+								It's a game that is gameplay-wise close to the main games of the Pokemon licence.
+								<br>
+								Working alone on this, I'm doing every designs, assets and code.
+								Thus it's a long project that I can only work on during my free time, and its current state doesn't allow to show a demo yet.
+							</p>
+
+						</div>
+						
+						<!--<span id="infovid">
+							<iframe width="300" height="281" src="https://www.youtube.com/embed/rPfGLS3dp7M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</span>-->
+					</div>
+				</div>
+
+				<!--<div id="infoprojdl">
+					<a style="margin-right: 20px; margin-bottom: 20px;" href="https://www.youtube.com/watch?v=rPfGLS3dp7M" target="_blank"><i class="fab fa-youtube fa-3x"></i></a>
+					<a style="margin-right: 20px; margin-bottom: 20px;" href="https://github.com/Asbibi/NodalWorld.git" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+
+				</div>-->
+			</div>
+
+	<!-- AnimaDB -->
+			<div id="container" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../assets/images/projbg/Anima-data.png); background-size: 100%; background-repeat:no-repeat center top; width: 100%">
+
+				<div id="infocard">
+
+					<div id="infoproj">
+
+						<div id="infotext">
+
+							<h2>Anima Data Manager</h2>
+
+							<h3>2022-??? | C++ - Qt</h3>
+
+							<p>
+								Anima being a project close to a Pokemon game, it recquires a consequent data set to stock all the inforamtion on the different creatures, their moves, the items, the non playable characters...
+								<br>
+								All of this can be handled by DataTable assets in Unreal, fed by ".csv" files.
+								However I'm not satisfied with the ".csv" editor at my disposal and thus decided to create my own dedicated application using Qt Creator.
+							</p>
+
+						</div>
+						
+						<!--<span id="infovid">
+							<iframe width="300" height="281" src="https://www.youtube.com/embed/rPfGLS3dp7M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</span>-->
+					</div>
+				</div>
+
+				<!--<div id="infoprojdl">
+					<a style="margin-right: 20px; margin-bottom: 20px;" href="https://www.youtube.com/watch?v=rPfGLS3dp7M" target="_blank"><i class="fab fa-youtube fa-3x"></i></a>
+					<a style="margin-right: 20px; margin-bottom: 20px;" href="https://github.com/Asbibi/NodalWorld.git" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+
+				</div>-->
+			</div>
+
+	<!-- One Week -->
+			<div id="container" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../assets/images/projbg/One-Week.png); background-size: 100%; background-repeat:no-repeat center top; width: 100%; margin-bottom:0;">
+
+				<div id="infocard">
+
+					<div id="infoproj">
+
+						<div id="infotext">
+							<h2>One Week</h2>
+
+							<h3>Summer 2018 | Blender Game Engine - Python</h3>
+
+							<p>2.5D Platformer created on the Blender Game Engine (BGE), available on the 3D software Blender until its 2.8.X version.
+								The programming is mainly visual using logic bricks, but python scripts are also present to allow more complex features.
+								The player controls an angel that has to help his God to gather elemental sources to build a new world.
+								Other characters are playables once the game is finished a first time.
+							</p>
+
+						</div>
+
+						<span id="infovid">
+							<iframe width="300" height="281" src="https://www.youtube.com/embed/SBe_soC9O0E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</span>
+					</div>
+				</div>
+
+				<div id="infoprojdl">
+					<a style="margin-right: 20px; margin-bottom: 20px;" href="https://www.youtube.com/watch?v=SBe_soC9O0E" target="_blank"><i class="fab fa-youtube fa-3x"></i></a>
+					<a style="margin-right: 20px; margin-bottom: 20px;" href="https://drive.google.com/drive/folders/1XqGfSB9ovWXalp_1VcXt3qQyov-Z9GB1?usp=sharing" target="_blank"><i class="far fa-file-archive fa-3x"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

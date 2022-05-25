@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+	<link rel="icon" href="favicon.ico">
+	<title>LOUIS GINESY | Portfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<script src="https://kit.fontawesome.com/a696506d30.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+</head>
+
+<body style= " background: url(../assets/images/ThorGiant.png) no-repeat center top;
+	background-size: 100%; background-color: #252525; background-attachment: fixed;">
+	<script src="../assets/js/script.js"></script>
+
+	<div id="nav">
+		
+		<div style="display: flex; justify-content: center; margin-left: 25px">
+
+			<div style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start;">
+				<h2>Louis GINESY</h2>
+				<p>louis.ginesy@ip-paris.fr</p>
+			</div>
+
+			<div style="display: flex; justify-content: center; align-items: center; height: 80px; margin-left:25px; ">
+				<a href="https://www.linkedin.com/in/louis-ginesy-8b811b180" target="_blank" style="color: white;"><span class="fab fa-linkedin fa-2x"></span></a>
+				<a href="../assets/cvs/Louis-Ginesy-CV-EN.pdf" style="margin-left: 15px;" download><img style="width: 40px;" src="../assets/images/cv_icon.png"></a>
+			</div>
+
+		</div>
+
+		<div style="display: flex; justify-content: space-around; margin-right: 15px">
+			<div id="cell" class=""></div>
+			<div id="cell" class="other">
+				<a href="home.html">About me</a>
+			</div>
+			<div id="cell" class="other">
+				<a href="projetinfos.html">Code projects</a>
+			</div>
+			<div id="cell" class="other">
+				<a href="real3d.html">3D productions</a>
+			</div>
+			<div id="cell" class="selected">
+				<a href="autreprojets.html">Other projects</a>
+			</div>
+			<div id="cell" class="" onmouseover="setFlag_FR()" onmouseout="setFlag_EN()">
+				<a href="../fr/autreprojets.html"><img id="flag-icon" style="width: 35px;" src="../assets/images/gb.svg"></a>
+			</div>
+		</div>
+
+	</div>
+
+	<div id="wrapper">
+
+		<div id="bruce" style="height: 400px;">
+			<h1 style="font-size: 50px;">Other projects</h1>
+		</div>
+
+		<div id="content">
+			<span style="max-width: 1000px; margin-bottom: 40px">
+
+				<span style="display: flex;justify-content: space-between; align-items: center;"><h2 style="margin: 40px 0px">Illustrative Posters for School Clubs</h2></span>
+
+				<p style="font-size: 20px">
+					During the 3 years I've spent at Telecom Sudparis, I joined several clubs and associations in which I often had a position related to communication. This way, I had the occasion to produce several illustrative posters for those clubs mainly using the Gimp software.
+					<!--Pendant les trois années que j'ai passé à Télécom Sudparis, j'ai fait parti de plusieurs clubs dans lesquels j'occupais souvent un poste lié à la communication du club. Ainsi, j'ai eu l'occasion de réaliser plusieurs affiches pour ces différents clubs grâce au logiciel Gimp.-->
+				</p>
+
+				<!-- Caroussel -->
+
+				<div id="card-slider" class="splide">
+					<div class="splide__track">
+						<ul class="splide__list">
+							<li class="splide__slide">
+								<img src="../assets/images/posters/BDA-Festivart_Lundi.jpg">
+								<h4>BDA - Festiv'Art</h4>
+								<div style="margin-bottom: 20px">
+									Festiv'Art is an event organized by Telecom Sudparis's Art Office (BDA). It consists into several activities and workshops spread over a week. This is the poster I created to introduce the activities of the first day.
+									<!--Le Festiv'Art est un événement organisé par le Bureau des Arts (BDA) qui consiste en plusieurs activités et ateliers répartis sur une semaine. Ceci est l'affiche que j'ai fait pour présenter les activités du premier soir.-->
+								</div>
+							</li>
+							<li class="splide__slide">
+								<img src="../assets/images/posters/BDA-Presentation.png">
+								<h4>BDA - Presentation</h4>
+								<div style="margin-bottom: 20px">
+									To ensure its renewal, it's fundamental for the Art Office (BDA) to interest and integrate new students as early as possible in the shcoolar year. This is why a presentation of the different positions in the Art Office is organized, and this is the poster I made to announce the presentation.
+									<!--Il est important pour le Bureau des Arts (BDA) d'intéresser et d'intégrer un maximum de nouveaux élèves dès le début de l'année. C'est pour cela qu'une présentation des différents pôles du BDA est proposée, présentation qui a été annoncée par cette affiche.-->
+								</div>
+							</li>
+							<li class="splide__slide">
+								<img src="../assets/images/posters/Gamint-LAN_League_of_Legends.png">
+								<h4>Gamint - Lists' Battle</h4>
+								<div style="margin-bottom: 20px">
+									Every year, Gamint organizes a LAN on the game "League of Legends", which is our most popular LAN. On this occasion, we set up a tournament on this game reserved to the students canditating to the Student Office (BDE), and cast it to the other students.
+									<!--A Gamint, nous organisons chaque année une LAN sur le jeu "League of Legends" qui est notre LAN la plus populaire. A cette occasion, nous organisons un tournoi sur ce jeu réservé au listes candidates à l'élection du Bureau Des Elèves (BDE), affrontement annoncé par cette affiche.-->
+								</div>
+							</li>
+							<li class="splide__slide">
+								<img src="../assets/images/posters/Gamint-LAN_Minecraft.jpg">
+								<h4>Gamint - The Enderlan</h4>
+								<div style="margin-bottom: 20px">
+									Poster announcing the first edition of a LAN on Minecraft, for which we had prepared a dedicated private server. I realized the background of this poster on Blender, as well as the model for the 3D printed trophee offered to the LAN winners. Both showcase an enderman (an iconic monster from Minecraft) holding a diamond pickaxe.
+									<!--Première édition d'une LAN réalisée sur Minecraft. Nous avions pour cette LAN préparé un serveur privé dédié. J'ai réalisé cette affiche jusqu'au fond fait sur Blender, ainsi que le trophée offert aux gagnant qui était un Enderman (monstre iconique de Minecraft) tenant une pioche imprimé en 3D.-->
+								</div>
+							</li>
+							<li class="splide__slide">
+								<img src="../assets/images/posters/Gamint-LAN_Party_Games.png">
+								<h4>Gamint - Party Games LAN</h4>
+								<div style="margin-bottom: 20px">
+									My first poster as communication manager at Gamint. This LAN targetted a set of several multiplayer games qucik to learn and aimed to announce and celebrate the new team incharge of the club.
+									<!--Ma première affiche en tant que nouveau responsable communication à Gamint. Cette LAN était portée sur un ensemble de jeux multijoueurs rapides à prendre en main pour annoncer et célébrer la passation du club et le début de notre mandat.-->
+								</div>
+							</li>
+							<li class="splide__slide">
+								<img src="../assets/images/posters/Gamint-LAN_Super_Smash_Bros_Ultimate.png">
+								<h4>Gamint - Smash LAN</h4>
+								<div style="margin-bottom: 20px">
+									The poster for our first LAN as second year students, I created it with a first year student.
+									<!--L'affiche de notre première LAN en tant que 2eme année, je l'ai réalisé avec un élève d epremière année.-->
+								</div>
+							</li>
+							<li class="splide__slide">
+								<img src="../assets/images/posters/Gamint-LAN_World_Of_Warcraft _ Trackmania.png">
+								<h4>Gamint - My first LAN Poster</h4>
+								<div style="margin-bottom: 20px">
+									My first associative poster ever, its design is inspired from a poster from the previous Gamint team.
+									<!--Ma toute première affiche associative. Elle s'inspire d'une autre affiche réalisée par le précédent bureau de Gamint.-->
+								</div>
+							</li>
+							<li class="splide__slide">
+								<img src="../assets/images/posters/Gate_Fresqu_It-Brainstorming.png">
+								<h4>GATE Project - Brainstorming Fresqu'It</h4>
+								<div style="margin-bottom: 20px">
+									I've done this poster to announce the brainstorming session of our GATE project Fresqu'It. Indeed, as our project is about painting a wall with the help of teenagers from Evry, this brainstorming aimed at choosing the fresco theme with them.
+									<!--J'ai réalisé cette affiche pour annoncer la session de brainstorming que nous avons fait pour notre projet GATE Fresqu'It. En effet, notre projet consistant à peindre une fresque avec des jeunes d'Evry, ce brainstorming visait à choisir le thème de la fresque.-->
+								</div>
+							</li>
+							<li class="splide__slide">
+								<img src="../assets/images/posters/Le_RIG-Formation_Blender1.png">
+								<h4>Le RIG - Formation 1 et 2 sur 6</h4>
+								<div style="margin-bottom: 20px">
+									When I created the 3D club of my school, Le RIG, I provided a training of the software Blender in order to teach the basics of 3D modelling and animation to the interested students. This poster advertised the 2 first sessions that were about the modelisation part.
+									<!--Lorsque j'ai fondé le club de 3D de mon école, Le RIG, j'ai proposé une formation sur le logiciel Blender afin d'apprendre les bases de la modélisation et de l'animation 3D aux personnes intéressées. Cette affiche annonçait les 2 premières séances qui portaient sur la partie modélisation de la formation.-->
+								</div>
+							</li>
+							<li class="splide__slide">
+								<img src="../assets/images/posters/Le_RIG-Formation_Blender3.png">
+								<h4>Le RIG - Formation 5 et 6 sur 6</h4>
+								<div style="margin-bottom: 20px">
+									And this is the poster for the two last sessions. They were about shaders, lighting and compositing/post-process. I also made an animated poster for the third and fourth sessions that were about rigging and animating.
+									<!--Et voici l'affiche pour les deux dernières séances de la formation portant elles sur les shader, l'éclairage et le compositing. Il y avait également une affiche animée pour les séances 3 et 4 qui portaient sur le rigging et l'animation.-->
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<br>
+
+				<!-- Pour rajouter du contenu, copier de delà -->
+				
+				<span style="display: flex;justify-content: space-between; align-items: center;"><h2 style="margin: 40px 0px">GATE Project - Fresqu'It'</h2> <a id="yt" href="https://youtu.be/B0ok_BnDYWo" target="_blank"><i id="yt" class="fab fa-youtube fa-3x"></i></a></span>
+
+				<iframe width="1000" height="562" src="https://www.youtube.com/embed/B0ok_BnDYWo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+				<p style="font-size: 20px;">
+					The GATE project is a group project mandatory for first year students of Telecom Sudparis. The subjects are various and not necessarly related to a technical topic.<br>
+					I decided to join the Fresqu'It project.
+					We were 7 students aiming to produce a mural painting in a tunnel at Evry. An peculiarity of that project being that we didn't want to paint this fresco alone, but
+					with the participation of children and teenagers living in Evry.<br>
+					During this project, another student and me were in charge of the external communication, and here is the sum up video that we've realized and the end of the project.
+					<!--Le projet Gate est un projet de groupe de première année à Télécom Sudparis qui n'a pas forcément d'aspect technique.
+					Pour ma part, j'ai choisi de participer au projet Fresqu'It.
+					Nous étions 7 et avions pour objectif de réaliser une fresque dans un tunnel d'Evry en collaboration avec des jeunes des maisons de quartier de la ville.
+					J'y occupais le rôle de co-responsable de la communication avec un autre étudiant, et ceci est la vidéo de présentation que nous avons réalisé à la fin du projet.-->
+				</p>
+
+				<!-- A delà -->
+
+			</span>
+
+
+
+		</div>
+		
+	</div>
+
+</body>
+
+<script type="text/javascript">
+	document.addEventListener( 'DOMContentLoaded', function () {
+		new Splide( '#card-slider', {
+			perPage    : 1,
+			breakpoints: {
+				600: {
+					perPage: 1,
+				}
+			}
+		} ).mount();
+	} );
+</script>
+
+</html>

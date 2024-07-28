@@ -4,9 +4,10 @@ html{
 
 body {
 	margin :0;
-
-	/*Look*/
-	
+	background: url(../images/ThorGiant.png) no-repeat center top;
+	background-size: 100%;
+	background-color: #252525;
+	background-attachment: fixed;	
 	color: white;
 }
 
@@ -37,7 +38,31 @@ body {
 
 	#nav p,h2 {
 		margin:0;
-	}	
+	}
+	
+	#nav-left {
+		display: flex;
+		justify-content: center;
+		margin-left: 25px
+	}
+	#nav-left-text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+	}
+	#nav-left-link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 80px;
+		margin-left:25px;
+	}
+	#nav-right {
+		display: flex;
+		justify-content: space-around;
+		margin-right: 15px
+	}
 
 	#cell {
 		height: 80px;
@@ -58,6 +83,10 @@ body {
 		font-size: 25px;
 	}
 
+	#cell img {
+		width: 35px;
+	}
+
 	#cell + .other a:hover{
 		border-bottom-color: red;
 		border-bottom-width: 5px;
@@ -68,6 +97,41 @@ body {
 		border-bottom-color: red;
 		border-bottom-width: 5px;
 		border-bottom-style: solid;
+	}
+
+	
+/*Languages*/
+	.dropdown {
+		position: relative;
+		display: inline-block;
+	}
+
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #0F0F0F;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+		top: 100%;
+		left: -50%;
+	}
+
+	.dropdown:hover .dropdown-content {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	#cell .dropdown-content a {
+		display: inline-block;
+		padding: 10px;
+		text-decoration: none;
+		/* color: white; /* Default text color */
+	}
+
+	#cell .dropdown-content a:hover {
+		color: red;
 	}
 
 /*Wrapper*/
@@ -88,7 +152,10 @@ body {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		height: 600px;
+		height: 400px;
+	}
+	#bruce h1{
+		font-size: 50px;
 	}
 
 /*Content*/
@@ -105,6 +172,21 @@ body {
 		color: white;
 		box-shadow: 10px 7px 15px rgba(0, 0, 0, .75), -10px 7px 15px rgba(0,0,0, .75);
 	}
+	.content-title{
+		height: 120px;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.content-title span{
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		align-items: center;
+	}
+	.content-title h2{
+		font-size: 40px;
+		margin-left: 60px;
+	}
 
 	#content h1 {
 		font-size: 50px;
@@ -117,6 +199,32 @@ body {
 	#content p {
 		font-size: 30px;
 		text-align: justify;
+	}
+
+	.content-span {
+		max-width: 1000px;
+		margin-bottom: 40px;
+	}
+
+/*A Propos*/
+
+	.home-profile-picture {
+		width: 300px; 
+		margin: 50px
+	}
+
+	.home-text-span {
+		margin-top: 30px;
+		margin-bottom: 50px;
+	}
+	.home-text-span h1 {
+		font-size: 50px
+	}
+	.home-text-span h2 {
+		margin: 0;
+	}
+	.home-text-span p {
+		margin-top: 50px;
 	}
 
 /*Projets informatiques*/
@@ -177,6 +285,8 @@ body {
 
 	#infoprojdl a {
 		color: white;
+		margin-right: 20px;
+		margin-bottom: 20px;
 	}
 
 	#infoprojdl img:hover{
@@ -199,6 +309,13 @@ body {
 		margin-bottom: 20px;
 	}
 
+	.projInfoContainer {
+		background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), var(--image-url);
+		background-size: 100%;
+		background-repeat:no-repeat center top;
+		width: 100%
+	}
+
 	#dl{
 		border-style: solid;
 		border-color: white;
@@ -218,6 +335,18 @@ body {
 
 /*Projets 3D*/
 
+	.real-element span {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.real-element span h2 {
+		margin: 40px 0px;
+	}
+	.real-element p {
+		font-size: 20px  !important;
+	}
+
 	#yt i,a {
 		color: red;
 	}
@@ -230,4 +359,22 @@ body {
 	}
 	#yt p {
 		font-size: 25px !important; 
+	}
+
+/* Autres projets */
+
+	.autre-proj-element span {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.autre-proj-element span h2 {
+		margin: 40px 0px;
+	}
+	.autre-proj-element p {
+		font-size: 20px !important;
+	}
+
+	.splide__slide div {
+		margin-bottom: 20px
 	}
